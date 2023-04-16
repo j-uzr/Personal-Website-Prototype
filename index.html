@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- links  -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+
+<!--
+    class="main-content" represents the "pages" of the webpage, they will display all of the content
+    
+    Initially all pages are stacked on top of each other, therefore only one actual page is displayed
+-->
+
+<body class="main-content">
+    <header class="section sec1 header active" id="home"> <!-- home page -->
+            <div class="headercontent">
+                <div class="left-header">
+                    <div class="h-shape"></div>
+                    <div class="image">
+                        <img class= "sosa-img" src="img/Sosa Boi.jpg" alt = "">
+                    </div>
+                </div>
+                <div class="right-header">
+                    <h1 class="name">
+                        Hi, I am <span>SosaMan</span>.
+                        A Top G.
+                    </h1>
+                    <p>
+                        I am learning web development, I want to broaden my software ability.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Nunc aliquet bibendum enim facilisis
+                        gravida.
+                    </p>
+                    <a href="" class="main-btn">
+                        <span class="btn-txt">Download CV</span>
+                        <span class="btn-icon"><i class="fas fa-download"></i></span>
+
+                    </a>
+                </div>
+            </div>
+    </header>
+    <main> <!-- main represents the dominant content of the body -->
+        <section class="section sec2 about" id="about"></section> <!-- about page -->
+        <section class="section sec3 portfolio" id="portfolio"></section> <!-- portfolio page -->
+        <section class="section sec4 blogs" id="blogs"></section> <!-- blogs page -->
+        <section class="section sec5 contact" id="contact"></section> <!-- contact page -->
+    </main>
+    
+<!--
+    class="controlls" represents the all buttons for each page
+    Using inspect element you can see that the buttons are grouped together in a highlighted box
+
+    Within class="controlls" is another class,
+    class="control" represents the individual buttons
+    control classes are numbered to distinguish different elements
+    active-btn represents the active functioning button
+
+    "id" and "data-id=" is like mapping. When you click on a "data-id" you will be taken to the corresponding "id"
+    page
+
+    VS CODE PRO TIP: CAN USE $ * AN INTEGER TO REPLICATE n TIMES
+-->
+
+    <div class="controlls">
+            <div class="control control-1 active-btn" data-id="home" > <!-- home button -->
+                <i class="fas fa-home"></i>
+            </div>
+            <div class="control control-2" data-id="about"> <!-- about button -->
+                <i class="fas fa-user"></i>
+            </div>
+            <div class="control control-3" data-id="portfolio"><!-- portfolio button -->
+                <i class="fas fa-briefcase"></i>
+            </div>
+            <div class="control control-4" data-id="blogs"><!-- blogs button -->
+                <i class="fas fa-newspaper"></i>
+            </div>
+            <div class="control control-5" data-id="contact"> <!-- contact button -->
+                <i class="fas fa-envelope-open"></i>
+            </div>
+    </div>
+
+    <script src="app.js"></script> <!-- connect javascript file -->
+
+</body>
+</html>
